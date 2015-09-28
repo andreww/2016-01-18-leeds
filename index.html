@@ -1,18 +1,18 @@
 ---
 layout: workshop
 root: .
-venue: FIXME      # brief name of host site without address (e.g., "Euphoric State University")
-address: FIXME    # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
-country: FIXME    # country (two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: FIXME   # language (two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: FIXME     # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: FIXME  # human-readable date (e.g., "Feb 17-18, 2020")
-humantime: FIXME  # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME  # use YYYY-MM-DD format like "2015-01-01"
-enddate: FIXME    # use YYYY-MM-DD format like" 2015-01-02"
-instructor: FIXME # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: FIXME     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: FIXME    # contact email address for workshop organizer, such as "grace@hopper.org"
+venue: NERC / University of Bristol      # brief name of host site without address (e.g., "Euphoric State University")
+address: School of Earth Sciences, University of Bristol, Wills Memorial Building, Queens Road, Bristol BS8 1RJ. United Kingdom
+country: gb    # country (two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: en   # language (two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: 51.4560000,-2.6040000
+humandate: Jan 6-8, 2016  # human-readable date (e.g., "Feb 17-18, 2020")
+humantime: 9:00 am - 5:30 pm  # human-readable time (e.g., "9:00 am - 4:30 pm")
+startdate: 2016-01-06  # use YYYY-MM-DD format like "2015-01-01"
+enddate: 2016-01-08    # use YYYY-MM-DD format like" 2015-01-02"
+instructor: ["Andrew Walker"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Jon Mound"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: J.E.Mound@leeds.ac.uk    # contact email address for workshop organizer, such as "grace@hopper.org"
 etherpad:         # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
@@ -75,11 +75,26 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   Explain who your audience is.  (In particular, tell readers if the
   workshop is only open to people from a particular institution.
 -->
+
+<p>
+  The workshop is funded by <a href="//www.nerc.ac.uk/">NERC</a> as part of the 
+  <a href="//www.nerc.ac.uk/funding/available/postgrad/advanced/atsc/">
+  Advanced Training Short Courses</a> programme.
+  Priority will thus be given to 
+  NERC-funded PhD students and early career researchers from the environmental 
+  sciences who should contact <a href="mailto:J.E.Mound@leeds.ac.uk">Jon Mound</a>
+  for booking information. Some funding to cover travel and accommodation costs of 
+  these participants is avalable. Any unallocated spaces will be made generally avalable 
+  in early December.
+</p>
+
 <p>
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
-  <strong>You don't need to have any previous knowledge of the tools that will
-    be presented at the workshop.</strong>
+  The course is aimed at postgraduate students and other scientists who are familiar 
+  with basic programming concepts (like loops, conditionals, arrays, and functions) but 
+  need help to translate this knowledge into practical tools to help them work more productively.
+  Priority will be given to NERC-funded PhD students and early career researchers from the environmental
+  sciences.
 </p>
 
 <!--
@@ -141,31 +156,48 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   to match your plans.  You may also want to change 'Day 1' and 'Day
   2' to be actual dates or days of the week.
 -->
-<h2>Schedule</h2>
+<h2>Provisional Schedule</h2>
 
-<div class="row">
-  <div class="col-md-6">
+<div class="row-fluid">
+  <div class="span6">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+     <tr> <td>09:00</td> <td> Arrival and Welcome</td> </tr>
+     <tr> <td>09:30</td> <td> Using the shell to do more in less time</td> </tr>
+     <tr> <td>10:30</td> <td> <em>Break</em></td> </tr>
+     <tr> <td>10:45</td> <td> Using version control to manage information</td> </tr>
+     <tr> <td>12:30</td> <td> <em>Lunch (provided)</em></td> </tr>
+     <tr> <td>13:30</td> <td> Introduction to Python for Environmental Scientists</td> </tr>
+     <tr> <td>15:00</td> <td> <em>Break</em></td> </tr>
+     <tr> <td>15:15</td> <td> Python and good programming practice (1)</td> </tr>
+     <tr> <td>16:30</td> <td> Defensive programming with python</td> </tr>
+     <tr> <td>17:30</td> <td> <em>Close</em></td> </tr>
     </table>
   </div>
-  <div class="col-md-6">
+  <div class="span6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+     <tr> <td>09:00</td> <td> Recap </td> </tr>
+     <tr> <td>09:30 </td> <td>Python and good programming practice (2)</td> </tr>
+     <tr> <td>10:30</td> <td> <em>Break</em></td> </tr>
+     <tr> <td>10:45</td> <td> Using version control to share information</td> </tr>
+     <tr> <td>12:00</td> <td> <em>Lunch</em></td> </tr>
+     <tr> <td>13:00</td> <td> Problem solving with Python</td> </tr>
+     <tr> <td>14:45</td> <td> <em>Break</em></td> </tr>
+     <tr> <td>15:00</td> <td> Python and the shell</td> </tr>
+     <tr> <td>16:00</td> <td> Sharing code: documentation and licencing</td> </tr>
+     <tr> <td>17:00</td> <td> Pulling it all together</td> </tr>
+     <tr> <td>17:30</td> <td> Close</td> </tr>
     </table>
   </div>
+  <h3>Day 3</h3>
+  <p>The third day will attendees to begin to work together in small groups to develop 
+    useful tools for their own research. We will start with an introduction to the day
+    at 09:00 and have a wrap-up session including time for groups show their progress 
+    from about 15:00. We will finish by 17:00 (lunch and breaks will be provided as 
+    detailed above).
+    
+  </p>
 </div>
 
 <!--
@@ -278,20 +310,6 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <li>Open licenses</li>
       <li>Where to host work, and why</li>
       <li><a href="{{site.swc_githubio}}/git-novice/reference.html">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="col-md-6">
-    <h3>Managing Data with SQL</h3>
-    <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_githubio}}/sql-novice-survey/reference.html">Reference...</a></li>
     </ul>
   </div>
 </div>
@@ -562,87 +580,6 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   </p>
 </div> <!-- End of 'Python' section. -->
 
-<div id="r"> <!-- Start of 'R' section. -->
-  <h3>R</h3>
-
-  <p>
-    <a href="http://www.r-project.org">R</a> is a programming language
-    that is especially powerful for data exploration, visualization, and
-    statistical analysis. To interact with R, we use
-    <a href="http://www.rstudio.com/">RStudio</a>.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="r-windows">Windows</h4>
-      <p>
-        Install R by downloading and running
-        <a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-        Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-macosx">Mac OS X</h4>
-      <p>
-        Install R by downloading and running
-        <a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-        Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-linux">Linux</h4>
-      <p>
-        You can download the binary files for your distribution
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
-        you can use your package manager (e.g. for Debian/Ubuntu
-        run <code>sudo apt-get install r-base</code> and for Fedora run
-        <code>sudo yum install R</code>).  Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-  </div>
-</div> <!-- End of 'R' section. -->
-
-<div id="sql"> <!-- Start of 'SQLite' section. -->
-  <h3>SQLite</h3>
-
-  <p>
-    SQL is a specialized programming language used with databases.  We
-    use a simple database manager called
-    <a href="http://www.sqlite.org/">SQLite</a> in our lessons.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="sql-windows">Windows</h4>
-      <p>
-        The <a href="{{site.swc_github}}/windows-installer">Software Carpentry Windows Installer</a>
-        installs SQLite for Windows.
-        If you used the installer to configure nano, you don't need to run it again.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-macosx">Mac OS X</h4>
-      <p>
-        SQLite comes pre-installed on Mac OS X.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-linux">Linux</h4>
-      <p>
-        SQLite comes pre-installed on Linux.
-      </p>
-    </div>
-  </div>
-
-  <p><strong>If you installed Anaconda, it also has a copy of SQLite
-    <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">without support to <code>readline</code></a>.
-    Instructors will provide a workaround for it if needed.</strong></p>
-</div> <!-- End of 'SQLite' section. -->
 
 <!--
   Uncomment this section if you are using our virtual machine.
@@ -671,3 +608,181 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   </ol>
 </div>
 -->
+
+<!--
+<hr/>
+
+<h2>Before the workshop</h2>
+
+<p>
+There are a three extra tasks to undertake before the workshop in 
+order to help make sure things run smoothly. Please try to do the
+following.
+</p>
+
+<div class="row-fluid">
+  <div class="span6">
+
+<h3>1. Grab free accounts</h3>
+
+<p>
+If you haven't already, please register for free accounts to 
+<ul>
+<li>Make use of Github. Register <a href='https://github.com/'>here</a> and don't forget your password. We will use this service as part of the lesson on version control.</li>
+<li>Use the Met Office datapoint API. Register for an account 
+<a href='http://register.metoffice.gov.uk/register/datapoint'>here</a>. We may use this as a data source for some of the exercises.</li>
+</ul>
+</p>
+
+<h3>2. Take a look at Bash, and maybe look at Python</h3>
+<p>
+We would like to get started with bash quickly at the start of
+the workshop. It would be useful if everybody could take a look 
+at the first three shell lessons, found 
+<a href='http://swcarpentry.github.io/shell-novice/00-intro.html'>here</a>,
+<a href='http://swcarpentry.github.io/shell-novice/01-filedir.html'>here</a>,
+and <a href='http://swcarpentry.github.io/shell-novice/02-create.html'>here</a>,
+to either remind yourself of how a shell works, or to have a first
+look if this is new to you.
+</p>
+<p>
+If you are new to Python, or you fear that your Python is rusty, it 
+may be worth taking a look at an online introduction. Christopher 
+Woods has a nice short introduction 
+<a href='http://chryswoods.com/beginning_python'>here</a>. 
+If you can follow this as 
+far as "conditions", you are good to go. We will be reviewing this 
+material anyway, so don't worry if you get stuck.
+</p>
+
+</div>
+
+-->
+
+<!-- Make the next bit accessable before the start of day 1 -->
+<!--
+<hr/>
+  <h2>During and after the workshop</h2>
+  <p> We have gathered together the various links you will need and useful 
+      information below. These will remain accessable after the workshop and 
+      we will add to this list as the workshop progresses. Please read and 
+      abide by the <a href='http://software-carpentry.org/conduct.html'
+      >code of conduct</a>.</p>
+
+  <p> We will make use of
+      <a href="{{page.etherpad}}">this etherpad</a>
+      during the workshop. Please use this to keep collaborative notes and ask 
+      (and answer) each others questions. Feel free to tweet from the workshop using 
+      <a href='https://twitter.com/search?f=realtime&q=%23SWCLeeds'>#SWCLeeds</a>.</p>
+
+  <h3>Workshop material</h3>
+   <p>Much of the material we will be using during the workshop can be found online
+      and you will need copies of this on your laptop. In order to download the material 
+      for the first session (and to
+      check you have a working system with internet access) please start a new
+      shell and type the following commands:
+<pre class="in">
+<code>cd 
+cd Desktop
+git clone https://github.com/andreww/2015-08-26-leeds-bash.git
+cd 2015-08-26-leeds-bash</code></pre>
+      (typing return after each line). You should see something like
+      "repository successfully cloned". Let us know if this does not work 
+      for you.
+   </p>
+
+   <p>Archived material for <a href='2015-08-26-leeds-bash.zip'>bash</a>, 
+      <a href='sc-python-1.zip'>python</a>
+      and <a href='2015-08-26-leeds-defensive.zip'
+      >defensive programming</a> can be downloaded as
+      zip files. Aaron&apos;s git material can be found at <a
+      href='http://aaren.me/2015-08-26-git/'>http://aaren.me/2015-08-26-git/</a>
+   </p>
+
+  <h3>Stuck somewhere new?</h3>
+   <p>
+    If you find yourself in a shell that you don't recognise, or in an editor 
+    that you can't get out of then see 
+    <a href="http://hpcarcher.github.io/2015-04-16-imperial/novice/ref/05-prompts-exits.html">recognising prompts and how to exit</a>.
+   </p>
+-->
+<!-- Make the stuff below accessale before the end of day 2 -->
+<!--
+<h3>Useful links</h3>
+
+<h4> Software Carpentry online lessions:</h4>
+<ul>
+<li><a href="http://swcarpentry.github.io/shell-novice">The Unix Shell</a></li>
+<li><a href="http://swcarpentry.github.io/git-novice">Version Control with Git</a></li>
+<li><a href="http://swcarpentry.github.io/python-novice-inflammation">Programming with Python</a></li>
+</ul>
+
+<h4>Git:</h4>
+    <ul>
+     <li>
+      GitHub <a href="https://try.github.io/levels/1/challenges/1">interactive Git tutorials</a>
+     </li>
+     <li>
+      <a href="http://justinhileman.info/article/git-pretty/">Git pretty</a> - a flowchart about how to recover from mistakes.
+     </li>
+     <li>
+      <a href="https://presentate.com/bobthecow/talks/changing-history">Changing History, or How to Git pretty</a> - slides relating to the above.
+     </li>
+    </ul>
+
+<h4>Python:</h4>
+    <ul>
+     <li>
+       <a href="https://peak5390.wordpress.com/2012/12/08/matplotlib-basemap-tutorial-making-a-simple-map/">basemap introduction</a> 
+       and an <a href="http://introtopython.org/visualization_earthquakes.html">updated version</a>
+     </li>
+     <li>
+      <a href="http://matplotlib.org/gallery.html">matplotlib examples gallery</a> - includes source code.
+     </li>
+     <li>
+      <a href="http://wiki.scipy.org/Cookbook">SciPy Cookbook</a> - examples of how to do useful stuff using numpy, scipy, matplotlib, interfacing, etc.
+     </li>
+     <li>Scientific Python <a href="http://scipy-lectures.github.io/">lecture notes</a></li>
+    </ul>
+
+<h4>Training:</h4>
+    <ul>
+     <li>
+      <a href="http://www.archer.ac.uk/training/">ARCHER Training</a> - free HPC training all over the UK.
+     </li>
+     <li>
+      <a href="http://www.codecademy.com/">Code Academy</a> - free online programming courses</a>
+     </li>
+    </ul>
+
+<h4>Papers</h4>
+<p>
+    Wilson G, Aruliah DA, Brown CT, Chue Hong NP, Davis M, et al. (2014)  
+    Best Practices for Scientific Computing. PLoS Biol 12(1): e1001745. <a 
+    href="http://dx.doi.org/10.1371/journal.pbio.1001745">doi:10.1371/journal.pbio.1001745</a>.
+</p>
+<p>
+    Sandve GK, Nekrutenko A, Taylor J, Hovig E (2013) Ten Simple Rules for  
+    Reproducible Computational Research. PLoS Comput Biol 9(10): e1003285. 
+   <a 
+    href="http://dx.doi.org/10.1371/journal.pcbi.1003285">doi:10.1371/journal.pcbi.1003285</a>.
+</p>
+<p>
+    Noble WS (2009) A Quick Guide to Organizing Computational Biology 
+    Projects. PLoS Comput Biol 5(7): e1000424. <a 
+    href="http://dx.doi.org/10.1371/journal.pcbi.1000424">doi:10.1371/journal.pcbi.1000424</a>.
+</p>
+<p>
+    Ram K (2013) "git can facilitate greater reproducibility and increased
+    transparency in science", Source Code for Biology and Medicine 2013,
+    8:7 <a
+    href="http://dx.doi.org/10.1186/1751-0473-8-7">doi:10.1186/1751-0473-8-7</a>.
+</p>
+<p>
+    Glass, R. (2002) Facts and Fallacies of Software Engineering, 
+    Addison-Wesley, 2002. (<a 
+    href="http://ff.tu-sofia.bg/~bogi/France/SoftEng/books/Addison%20Wesley%20-%20Robert%20L%20Glass%20-%20Facts%20and%20Fallacies%20of%20Software%20Engineering.pdf">PDF</a>).
+</p>
+-->
+
+<!-- END -->
