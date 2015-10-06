@@ -14,7 +14,7 @@ instructor: ["Andrew Walker"] # list of names like ["Kay McNulty", "Betty Jennin
 helper: ["Jon Mound"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: J.E.Mound@leeds.ac.uk    # contact email address for workshop organizer, such as "grace@hopper.org"
 etherpad:         # optional (insert the URL for your Etherpad if you're using one)
-eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
+eventbrite: 18902556054      # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
 <!--
   HEADER
@@ -24,24 +24,6 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   double quotation marks around the value, unless specified otherwise.
   And run 'tools/check' *before* committing to make sure that changes are good.
 -->
-
-<!--
-  EVENTBRITE
-
-  This block includes the Eventbrite registration widget if
-  'eventbrite' has been set in the header.  You can delete it if you
-  are not using Eventbrite, or leave it in, since it will not be
-  displayed if the 'eventbrite' field in the header is not set.
--->
-{% if page.eventbrite %}
-<iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="248px"
-  scrolling="auto">
-</iframe>
-{% endif %}
 
 <h2>General Information</h2>
 
@@ -82,8 +64,8 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   Advanced Training Short Courses</a> programme.
   Priority will thus be given to 
   NERC-funded PhD students and early career researchers from the environmental 
-  sciences who should contact <a href="mailto:J.E.Mound@leeds.ac.uk">Jon Mound</a>
-  for booking information. Some funding to cover travel and accommodation costs of 
+  sciences who should register below or contact <a href="mailto:J.E.Mound@leeds.ac.uk">Jon Mound</a>
+  for further information. Some funding to cover travel and accommodation costs of 
   these participants is avalable. Any unallocated spaces will be made generally avalable 
   in early December.
 </p>
@@ -103,6 +85,24 @@ make this possible. The workshop to be held in <a href='http://andreww.github.io
 >Bristol earlier in January</a> will be more 
 appropriate for those with more background knowledge. If you are not sure which 
 workshop is best for you please get in touch with us.</p>
+
+<!--
+  EVENTBRITE
+
+  This block includes the Eventbrite registration widget if
+  'eventbrite' has been set in the header.  You can delete it if you
+  are not using Eventbrite, or leave it in, since it will not be
+  displayed if the 'eventbrite' field in the header is not set.
+-->
+{% if page.eventbrite %}
+<iframe
+  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
+  frameborder="0"
+  width="100%"
+  height="248px"
+  scrolling="auto">
+</iframe>
+{% endif %}
 
 <!--
   LOCATION
